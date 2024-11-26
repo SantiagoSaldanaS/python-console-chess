@@ -1,0 +1,2 @@
+Enter: https://github.com/official-stockfish/Stockfish/releases/latest/download/stockfish-windows-x86-64-avx2.zip
+and unzip the folder onto this place.
