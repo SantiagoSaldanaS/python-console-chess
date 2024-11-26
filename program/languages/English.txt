@@ -1,0 +1,115 @@
+welcome=\n          Welcome to Python-Console-Chess!\n
+menu_options=\n   1. Local Player vs Player\n   2. Player vs Computer\n   3. Tutorial\n   4. Settings\n   5. Credits\n   6. Quit
+to_continue=\n  {underline}To continue select an option:{reset}
+
+settings=\n                    Settings\n
+language=\n{menu_white}1. Language:{reset} {language}
+show_coords_no=\n{menu_white}2. Show Coordinates:{reset} No
+show_coords_yes=\n{menu_white}2. Show Coordinates:{reset} Yes
+change_dir_no=\n{menu_white}3. Flip board:{reset} No
+change_dir_yes=\n{menu_white}3. Flip board:{reset} Yes
+auto_export_no=\n{menu_white}4. Autoexport finished games:{reset} No
+auto_export_yes=\n{menu_white}4. Autoexport finished games:{reset} Yes
+make_changes=\n\nTo make a change input the settings number. To return to the menu use /back or just press enter.
+change_else=\n\n{underline}¿Do you wish to change something else?{reset}
+
+deactivate_show_coords=Hiding coordinates.
+activate_show_coords=Showing coordinates.
+deactivate_change_dir=Not flipping board after movement.
+activate_change_dir=Flipping board after movement.
+deactivate_export=Disabling autoexport of games.
+activate_export=Enabling autoexport of games.
+
+quit_message=\nThank you for using the program
+
+sure_exit=\nAre you sure you want to exit the game?
+sure_draw=\nDo both parties agree to draw?
+sure_surrender=\nAre you sure you want to surrender?
+draw_machine=\nThe computer will not accept any draw requests.
+response1=\nAnswer:
+response2=\nSelection:
+response3=\nChoice:
+fen_position=\nThe FEN code of the current position is the following:\n
+
+white_centi_adv=\nWhite has an advantage of {eval} centi-pawns.
+black_centi_adv=\nBlack has an advantage of {eval} centi-pawns.
+white_mate_in=\nWhite has mate in {eval}
+black_mate_in=\nBlack has mate in {eval}.
+
+current_engine=\nCurrent engine is Stockfish
+
+error_command=\nError. No such command exists.
+error_illegal=\nError. Illegal or invalid move.
+error_coords=\nError. Give valid coordinates.
+error_option=\nError. Select a valid option.
+
+error_smith_knight=\nError. Remember to use Smith notation and move the knight to e6.
+error_smith_castle=\nError. Remember to use Smith notation and castle to either side.
+error_smith_promotion=\nError. Remember to use Smith notation and promote the pawn to a rook.
+error_smith_en_passant=\nError. Remember to use Smith notation and capture en passant.
+
+commands_help=\nCommands:\n{menu_white}/{commands0}{reset}: Shows command list.\n{menu_white}/{commands1} = {commands2}{reset}: Quits the program.\n{menu_white}/{commands3}{reset}: Quits to menu.\n{menu_white}/{commands4}{reset}: Sends draw query.\n{white}/{commands5} = /{commands6} = /{commands7}{reset}: Resigns the current game.\n{menu_white}/{commands8}{reset}: Gets FEN code from position.\n{menu_white}/{commands9} = /{commands10}{reset}: Get numerical evaluation from position (estimation).\n{menu_white}/{commands11}{reset}: Get stockfish's current parameters.\n{menu_white}/{commands12}{reset}: Get stockfish's current major version.
+
+player_computer=\Game #{num}\nUser vs Computer ({level})\n\n
+computer_player=\nGame #{num}\nComputer ({level}) vs User\n\n
+player_player=\nPartida #{num}\nPlayer 1 vs Player 2\n\n
+saved_game=Game saved as: '{_file}' on 'saved_game_history'.
+
+whites_turn={white}White's{reset} turn!
+blacks_turn={black}Black's{reset} turn!
+your_turn_white={white}Your turn!{reset}
+your_turn_black={black}Your turn!{reset}
+computer_thinking=The computer is thinking...
+
+last_move=\nLast move: {moved_piece}{reset}{origin} to {moved_piece}{reset}{ending}.
+you_moved=\nYou moved {moved_piece}{reset}{origin} to {moved_piece}{reset}{ending}.
+computer_moved=\nThe computer moved {moved_piece}{reset}{origin} to {moved_piece}{reset}{ending}.
+movement=Movement
+resign_white=\n¡Game over!. White has surrendered, Black wins.
+resign_black=\n¡Game over!. Black has surrendered, White wins.
+draw_end=\n¡Game over!. Draw by agreement.
+menu_switch=\nGoing to menu...
+generic_end=\n¡Game over!. Check mate or draw.
+
+save_history=\nDo you wish to save the game moves on a file?:
+
+machine_level=\n\n{underline}Select computer level:{reset}\n\n1. Beginner (400 elo)\n2. Intermediate (1,000 elo)\n3. Advanced (1,400 elo)\n4. Expert (1,800 elo)\n5. Master (2,400 elo).\n6. Grandmaster (2,600 elo)\n7. World Champion (2,800 elo)\n8. Impossible (3,200 elo)
+computer_first=\nDo you wish for the computer to move first? (Press enter for random)
+
+credits=\nProgram made by Santiago Saldaña Subías A01708446. \n\nThe Stockfish engine was developed by Tord Romstad, Marco Costalba,\nand Joona Kiiski. It is now being developed and maintained by the\nStockfish community.\n\nThe Stockfish python module was made by Ilya Zhelyabuzhsky.\n\nTutorials retrieved from https://www.123ajedrez.com and\nhttps://es.wikipedia.org/wiki/Notaci%C3%B3n_(ajedrez).\n\nTecnológico de Monterrey Campus Qro.
+
+
+
+tutorial=\n                     Tutorial\n
+tutorial_menu=\n1. Basic game rules.\n2. Notation for program moves.\n3. Program commands.\n4. Return to menu.
+
+rules_choice=\n{menu_white}Select what you'd like to learn about.{reset}
+rules_menu=| 1. The board\n| 2. The pieces\n| 3. Turns\n| 4. Castling\n| 5. Check\n| 6. Checkmate\n| 7. Draws\n| 8. Promotion\n| 9. Algebraic notation\n| 10. Official rules\n| 11. Return to previous menu
+
+rule1=\n{menu_white}BOARD{reset}\n\nThe chessboard is the battlefield,\ncomposed of 64 squares. Each side of the board\nhas eight squares (8 x 8 = 64).\n\nTo learn more about the board go to\nhttps://www.123ajedrez.com/reglas-basicas/el-tablero
+rule2=\n{menu_white}PIECES{reset}\n\nThe pieces are divided, by convention, into white\nand black. The players are called 'White' and 'Black',\nand each begins the game with sixteen pieces\nof their color: a king, a queen, two rooks, two bishops,\ntwo knights, and eight pawns.\n\nTo learn more about the pieces go to\nhttps://www.123ajedrez.com/reglas-basicas/laspiezas
+rule3=\n{menu_white}TURNS{reset}\n\nWhite always moves first, followed by players\ntaking turns to move one piece at a time\n(except for castling, where two pieces are moved simultaneously).\nThe pieces move either to a free square or one\noccupied by an opponent's piece, which is\ncaptured and removed from the board.\n\nTo learn more about turns go to\nhttps://www.123ajedrez.com/reglas-basicas/movimiento
+rule4=\n{menu_white}CASTLING{reset}\n\nThe king can make a special move\nwith the rook called castling.\n\nThis consists of crossing the rook with the king,\nmoving the king two squares on the first\nrank and placing the rook on the other side of the king.\n\nTo learn more about castling go to\nhttps://www.123ajedrez.com/reglas-basicas/enroque
+rule5=\n{menu_white}CHECK{reset}\n\nWhen a king is under immediate attack by one\nor more of the opponent's pieces, it is said to be in check.\nThe only allowed responses to a check are:\n - Capture the piece giving check\n - Place a piece between the checking piece and the\nking (unless the attacking piece is a knight)\n - Move the king to a square that is not under attack.\n\nTo learn more about check go to\nhttps://www.123ajedrez.com/reglas-basicas/el-jaque
+rule6=\n{menu_white}CHECKMATE{reset}\n\nThe objective of the game is checkmate, which occurs\nwhen the king is threatened with capture\n(check) and cannot avoid it.\n\nThe game doesn't always end in checkmate:\n - Any player can surrender if the situation seems hopeless.\n - In a timed game, a player can run out of time and lose, even with a superior position.\n - Games can also end in a draw.\n\nTo learn more about checkmate go to\nhttps://www.123ajedrez.com/reglas-basicas/final-del-juego
+rule7=\n{menu_white}DRAWS{reset}\n\nA game is considered a draw when there is a tie,\nwhich can happen in several situations:\n\n - Mutual agreement\n - Insufficient material: not enough pieces are left to\ncheckmate.\n - Stalemate\n - Triple repetition of the same position\n - Fifty-move rule\n\nTo learn more about draws go to\nhttps://www.123ajedrez.com/reglas-basicas/tablas
+rule8=\n{menu_white}PROMOTION{reset}\n\nWhen a pawn reaches the other side of the board,\nit promotes.\n\nThis means that the player chooses a queen, rook,\nknight, or bishop (of their own color), and places that piece\nin the square previously occupied by the pawn.\n\nTo learn more about promotion go to\nhttps://www.123ajedrez.com/reglas-basicas/Promocion-del-peon
+rule9=\n{menu_white}ALGEBRAIC NOTATION{reset}\n\nOver the years, several codifications have been developed\nto reflect the position of pieces or the moves made\nduring a chess game. Notation allows us to recreate games played\nby grandmasters to review their moves and learn from them.\n\nAdditionally, notation is required to play in tournaments,\ncompose or study chess problems, and understand chess books.\n\nTo learn more about notation go to\nhttps://www.123ajedrez.com/miscelanea/notacin
+rule10=\n{menu_white}OFFICIAL RULES{reset}\n\nThe official chess rules are regulated by the\nWorld Chess Federation. They are divided into four sections:\n\n - Basic rules of play:\n   https://www.123ajedrez.com/miscelanea/leyes-del-ajedrez/LeyesReglasBasicas\n\n - Competition rules:\n   https://www.123ajedrez.com/miscelanea/leyes-del-ajedrez/leyescompeticion\n\n - Appendices:\n   https://www.123ajedrez.com/miscelanea/leyes-del-ajedrez/leyesapendices\n\n - Glossary:\n   https://www.123ajedrez.com/miscelanea/leyes-del-ajedrez/glosario
+
+program_notation=\n\n{menu_white}PROGRAM NOTATION.{reset}
+notation_explanation1=\nIn chess, moves are usually written using something called\ncompact notation (e.g., Nf3). However, this is not the only way to represent them.\nIn fact, compact notation is officially defined as short algebraic notation (other types of algebraic notation are long (Ng1f3) and minimal (Nf3)).\nThere are also notations outside the algebraic system, such as descriptive or English notation (N3KR),\nICCF numeric (7163), Smith notation (g1f3), and coordinate notation (G1-F3), among others.
+notation_explanation2=This program will exclusively use Smith notation (g1f3). This consists\nof taking the starting square coordinates, and the destination square,\nand combining them without spaces or symbols. However, special letters\n(like captured piece) are sometimes added to moves such as captures, castling, and promotion. For simplicity, the program will not include these symbols. To promote, use a format like: g7g8=Q (where Q is Queen or the piece you're promoting to). To castle,\nonly define the king's square with the square it will end on after castling (for example e1g1). Finally, to capture an opponent’s piece,\nsimply jump to the square of the enemy piece (e4d5).
+notation_explanation3=\nYou don't need to include the symbols for check (+), capture (x), or piece (Q, N, K, R, etc.).
+
+first_test=Now that this is explained, let's move on to a practical example to learn Smith notation.\n\n{menu_white}Move the knight from d4 to e6.{reset}
+second_test=\n{menu_white}Now, castle the king to either side.{reset}
+third_test=\n{menu_white}Now, promote the pawn to a rook for checkmate.{reset}
+fourth_test=\n{menu_white}Finally, capture en passant the black pawn that just advanced.{reset}
+
+finish_test=\n{menu_white}Well done! Congratulations, you have completed the notation tutorial.\nYou can review it anytime from the tutorial menu.{reset}
+
+well_done=\n{menu_white}Well done!{reset}
+
+tutorial_commands=\n\n{menu_white}COMMANDS.{reset}
+tutorial_commands_explanation=\nDuring any game, you'll have access to commands with different functions.\nFrom resigning to getting the FEN code of the current position, you can do a variety of things using commands. To execute a command, you must use the forward slash (/).\n\nBelow is a list of available commands:

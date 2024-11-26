@@ -1,0 +1,115 @@
+welcome=\n         ¡Bienvenido a Python-Console-Chess!\n
+menu_options=\n   1. Jugador Local vs Jugador\n   2. Jugador vs Computadora\n   3. Tutorial\n   4. Configuración\n   5. Créditos\n   6. Salir
+to_continue=\n  {underline}Para continuar selecciona una opción:{reset}
+
+settings=\n                    Configuración\n
+language=\n{menu_white}1. Idioma:{reset} {language}
+show_coords_no=\n{menu_white}2. Mostrar coordenadas:{reset} No
+show_coords_yes=\n{menu_white}2. Mostrar coordenadas:{reset} Sí
+change_dir_no=\n{menu_white}3. Voltear tablero:{reset} No
+change_dir_yes=\n{menu_white}3. Voltear tablero:{reset} Sí
+auto_export_no=\n{menu_white}4. Autoexportar partidas terminadas:{reset} No
+auto_export_yes=\n{menu_white}4. Autoexportar partidas terminadas:{reset} Sí
+make_changes=\n\nPara hacer un cambio ingresa el número de configuración. Para regresar al menú usa /back o simplemente presiona enter.
+change_else=\n\n{underline}¿Deseas cambiar algo más?{reset}
+
+deactivate_show_coords=Ocultando coordenadas.
+activate_show_coords=Mostrando coordenadas.
+deactivate_change_dir=No se volteará el tablero después de los movimientos.
+activate_change_dir=Volteando el tablero después de los movimientos.
+deactivate_export=Desactivando la autoexportación de partidas.
+activate_export=Activando la autoexportación de partidas.
+
+quit_message=\nGracias por usar el programa
+
+sure_exit=\n¿Estás seguro de que quieres salir del juego?
+sure_draw=\n¿Ambas partes están de acuerdo en empatar?
+sure_surrender=\n¿Estás seguro de que quieres rendirte?
+draw_machine=\nLa computadora no aceptará ninguna solicitud de empate.
+response1=\nRespuesta:
+response2=\nSelección:
+response3=\nChoice:
+fen_position=\nEl código FEN de la posición actual es el siguiente:\n
+
+white_centi_adv=\nBlancas tienen una ventaja de {eval} centi-peones.
+black_centi_adv=\nNegras tienen una ventaja de {eval} centi-peones.
+white_mate_in=\nBlancas tienen mate en {eval}
+black_mate_in=\nNegras tienen mate en {eval}.
+
+current_engine=\nEl motor actual es Stockfish
+
+error_command=\nError. No existe tal comando.
+error_illegal=\nError. Movimiento ilegal o inválido.
+error_coords=\nError. Introduce coordenadas válidas.
+error_option=\nError. Selecciona una opción válida.
+
+error_smith_knight=\nError. Recuerde usar la notación de Smith y mover el caballo a e6.
+error_smith_castle=\nError. Recuerde usar la notación de Smith y enrocar hacia cualquier lado.
+error_smith_promotion=\nError. Recuerde usar la notación de Smith y coronar el peón a una Torre.
+error_smith_en_passant=\nError. Recuerde usar la notación de Smith y comer al paso.
+
+commands_help=\nComandos:\n{menu_white}/{commands0}{reset}: Muestra la lista de comandos.\n{menu_white}/{commands1} = {commands2}{reset}: Cierra el programa.\n{menu_white}/{commands3}{reset}: Regresa al menú.\n{menu_white}/{commands4}{reset}: Envía solicitud de tablas.\n{white}/{commands5} = /{commands6} = /{commands7}{reset}: Se rinde en la partida actual.\n{menu_white}/{commands8}{reset}: Obtiene el código FEN de la posición.\n{menu_white}/{commands9} = /{commands10}{reset}: Obtiene la evaluación numérica de la posición (estimación).\n{menu_white}/{commands11}{reset}: Obtiene los parámetros actuales de Stockfish.\n{menu_white}/{commands12}{reset}: Obtiene la versión principal actual de Stockfish.
+
+player_computer=\nPartida #{num}\nUsuario vs Computadora ({level})\n\n
+computer_player=\nPartida #{num}\nComputadora ({level}) vs Usuario\n\n
+player_player=\nPartida #{num}\nJugador 1 vs Jugador 2\n\n
+saved_game=Partida guardada como: '{_file}' en 'saved_game_history'.
+
+whites_turn={white}Turno de blancas{reset}!
+blacks_turn={black}Turno de negras{reset}!
+your_turn_white={white}¡Tu turno!{reset}
+your_turn_black={black}¡Tu turno!{reset}
+computer_thinking=La computadora está pensando...
+
+last_move=\nÚltimo movimiento: {moved_piece}{reset}{origin} a {moved_piece}{reset}{ending}.
+you_moved=\nMoviste {moved_piece}{reset}{origin} a {moved_piece}{reset}{ending}.
+computer_moved=\nLa computadora movió {moved_piece}{reset}{origin} a {moved_piece}{reset}{ending}.
+movement=Movimiento
+resign_white=\n¡Juego terminado!. Blancas se rindieron, Negras ganan.
+resign_black=\n¡Juego terminado!. Negras se rindieron, Blancas ganan.
+draw_end=\n¡Juego terminado!. Empate por acuerdo.
+menu_switch=\nRegresando al menú...
+generic_end=\n¡Juego terminado!. Jaque mate o empate.
+
+save_history=\n¿Deseas guardar los movimientos de la partida en un archivo?:
+
+machine_level=\n\n{underline}Selecciona el nivel de la computadora:{reset}\n\n1. Principiante (400 elo)\n2. Intermedio (1,000 elo)\n3. Avanzado (1,400 elo)\n4. Experto (1,800 elo)\n5. Maestro (2,400 elo)\n6. Gran Maestro (2,600 elo)\n7. Campeón Mundial (2,800 elo)\n8. Imposible (3,200 elo)
+computer_first=\n¿Deseas que la computadora haga el primer movimiento? (Presiona enter para aleatorio)
+
+credits=\nPrograma hecho por Santiago Saldaña Subías A01708446.\n\nEl motor Stockfish fue desarrollado por Tord Romstad, Marco Costalba,\ny Joona Kiiski. Actualmente está siendo desarrollado y mantenido por\nla comunidad de Stockfish.\n\nEl módulo de Stockfish para Python fue hecho por Ilya Zhelyabuzhsky.\n\nTutoriales obtenidos de https://www.123ajedrez.com y\nhttps://es.wikipedia.org/wiki/Notaci%C3%B3n_(ajedrez).\n\nTecnológico de Monterrey Campus Qro.
+
+
+
+tutorial=\n                     Tutorial\n
+tutorial_menu=\n1. Reglas básicas de juego.\n2. Notación para movimientos del programa.\n3. Comandos del programa.\n4. Volver al menu.
+
+rules_choice=\n{menu_white}Seleccione sobre qué le gustaría aprender.{reset}
+rules_menu=| 1. El tablero\n| 2. Las piezas\n| 3. Turnos de juego\n| 4. Enroque\n| 5. Jaque\n| 6. Jaque Mate\n| 7. Tablas\n| 8. Coronación\n| 9. Notación algebraica\n| 10. Reglas Oficiales\n| 11. Volver al menu anterior
+
+rule1=\n{menu_white}TABLERO{reset}\n\nEl tablero de ajedrez es  el escenario de la\nbatalla, está compuesto por 64 cuadros o\ncasillas. Cada lado del tablero tiene, por lo tanto,\nocho casillas (8 x 8 = 64).\n\nPara conocer más sobre el tablero vaya a\nhttps://www.123ajedrez.com/reglas-basicas/el-tablero
+rule2=\n{menu_white}PIEZAS{reset}\n\nLas piezas se dividen, por convención, en blancas\ny negras. A los jugadores se les conoce\ncomo 'Blanco' y 'Negro', y cada uno comienza\nel juego con dieciséis piezas de su\ncolor: un rey, una dama, dos torres, dos alfiles,\ndos caballos y ocho peones.\n\nPara conocer más sobre las piezas vaya a\nhttps://www.123ajedrez.com/reglas-basicas/laspiezas
+rule3=\n{menu_white}TURNOS{reset}\n\nLas blancas mueven siempre en primer lugar\ny a continuación los jugadores van jugando\nalternativamente una pieza cada vez (con la\nexcepción del enroque, en el que se mueven\ndos piezas al mismo tiempo). Las piezas se mueven\nya sea a una casilla libre, o una\nocupada por una pieza del oponente, que es\ncapturada y retirada del tablero.\n\nPara conocer más sobre los turnos vaya a\nhttps://www.123ajedrez.com/reglas-basicas/movimiento
+rule4=\n{menu_white}ENROQUE{reset}\n\nEl rey puede hacer un movimiento especial\ncon su torre llamado enroque.\n\nConsiste en cruzar la torre con el rey\nmoviendo el rey dos casillas en la primera\nfila y colocando la torre al otro lado del rey.\n\nPara conocer más sobre el enroque vaya a\nhttps://www.123ajedrez.com/reglas-basicas/enroque
+rule5=\n{menu_white}JAQUE{reset}\n\nCuando un rey está bajo ataque inmediato por\nuna o varias de las piezas del oponente, se\ndice que está en jaque. Las únicas respuestas\npermitidas a un jaque son:\n - Capturar la pieza que da jaque\n - Interponer una pieza entre la pieza que da jaque y el\nrey (a menos que la pieza atacante sea un caballo)\n - Mover el rey a una casilla donde no está atacada.\n\nPara conocer más sobre el jaque vaya a\nhttps://www.123ajedrez.com/reglas-basicas/el-jaque
+rule6=\n{menu_white}JAQUE MATE{reset}\n\nEl objetivo del juego es dar jaque mate, lo que ocurre\ncuando el rey es amenazado con ser capturado\n(jaque) y no puede evitarlo de ninguna\nmanera.\n\nLa partida no siempre termina en jaque mate:\n - Cualquier jugador puede rendirse si la situación parece desesperada.\n - Si se trata de una partida por tiempo, un jugador puede quedarse sin tiempo y perder, incluso con una posición muy superior.\n - Los juegos también pueden terminar en un empate (tablas). \n\nPara conocer más sobre el jaque mate vaya a\nhttps://www.123ajedrez.com/reglas-basicas/final-del-juego
+rule7=\n{menu_white}TABLAS{reset}\n\nSe dice que el resultado de una partida es tablas\ncuando se produce un empate, que puede\nocurrir en varios supuestos:\n\n - Tablas de común acuerdo\n - Tablas muertas: no quedan piezas suficientes para\ndar mate.\n - Tablas por ahogado\n - Triple repetición de una posición\n - Regla de los cincuenta movimientos\n\nPara conocer más sobre las tablas vaya a\nhttps://www.123ajedrez.com/reglas-basicas/tablas
+rule8=\n{menu_white}PROMOCIÓN{reset}\n\nCuando un peón alcanza el otro lado del\ntablero promociona / corona.\n\nEsto significa que el jugador elige una dama, una\ntorre, un caballo o un alfil (de su propio color),\ny coloca esa pieza en el lugar que ocupaba\nel peón.\n\nPara conocer más sobre la coronación vaya a\nhttps://www.123ajedrez.com/reglas-basicas/Promocion-del-peon
+rule9=\n{menu_white}NOTACIÓN ALGEBRAICA{reset}\n\nA través de los años, se han desarrollado varias\ncodificaciones para reflejar la posición de las\npiezas o los movimientos llevados a cabo\ndurante una partida de ajedrez. La notación\nnos permite recrear partidas jugadas\n por grandes maestros para revisar sus\npartidas y aprender de ellos.\n\nAsí mismo, la notación es necesaria para jugar\ntorneos, componer o estudiar problemas\ny entender los libros de ajedrez.\n\nPara conocer más sobre la notación vaya a\nhttps://www.123ajedrez.com/miscelanea/notacin
+rule10=\n{menu_white}REGLAS OFICIALES{reset}\n\nLas reglas oficiales del ajedrez están reguladas por la\nFederación Mundial de Ajedrez. Se dividen en cuatro apartados:\n\n - Reglas básicas de juego:\n   https://www.123ajedrez.com/miscelanea/leyes-del-ajedrez/LeyesReglasBasicas\n\n - Reglas de competición:\n   https://www.123ajedrez.com/miscelanea/leyes-del-ajedrez/leyescompeticion\n\n - Apéndices:\n   https://www.123ajedrez.com/miscelanea/leyes-del-ajedrez/leyesapendices\n\n - Glosario:\n   https://www.123ajedrez.com/miscelanea/leyes-del-ajedrez/glosario
+
+program_notation=\n\n{menu_white}NOTACIÓN DEL PROGRAMA.{reset}
+notation_explanation1=\nEn el ajedrez normalmente se escriben los movimientos de las piezas con algo llamado\nnotación compacta (ej: Cf3). Sin embargo, ésta no es la única forma de representarlos.\nEn realidad, la notación compacta es oficialmente definida como notación algebraica\ncorta (otras algebráicas son la larga (Cg1f3) y mínima (Cf3)). Existen también\nnotaciones fuera de la algebraica, como lo son la descriptiva o inglesa (C3AR),\nnumérica de la ICCF (7163), de Smith (g1f3) y de coordenadas (G1-F3), entre otras.
+notation_explanation2=Este programa va a utilizar exclusivamente la notación Smith (g1f3). Ésta consiste\nen tomar las coordenada de casilla de inicio, y casilla de destinto, y juntarlas\nsin espacios o símbolos. Sin embargo, a veces se les añaden letras especiales (como\npieza capturada) a movimientos como capturas, enroques y promociones. Por\nsimplificación, el programa no va a añadir éstos símbolos. Para coronar, se usará un\nformato como: g7g8=D (donde D es Dama o la pieza se vaya a coronar). Para enrocar\nsolamente se define la casilla del rey con la casilla en que va a terminar tras el\nenroque (por ejemplo e1g1). Finalmente, para capturar una pieza solamente se salta a\nla casilla de la pieza enemiga (e4d5).
+notation_explanation3=\nNo se requiere que se pongan los símbolos de jaque (+), de captura (x) o de pieza\n(D, C, R, T, etc.).
+
+first_test=Una vez explicado esto, pasemos a un ejemplo práctico para el aprendizaje de la notación Smith.\n\n{menu_white}Mueve el caballo de d4 a e6.{reset}
+second_test=\n{menu_white}Ahora, enroque al rey hacia cualquiera de los dos lados.{reset}
+third_test=\n{menu_white}Ahora, corone el peón a torre para dar mate.{reset}
+fourth_test=\n{menu_white}Finalmente, coma al paso al peón negro que acaba de avanzar.{reset}
+
+finish_test=\n{menu_white}¡Bien hecho!. Felicidades, ha acabado el tutorial de notación.\nPuede volver a repasarlo cuando quiera desde el menú de tutoriales.{reset}
+
+well_done=\n{menu_white}¡Bien hecho!{reset}
+
+tutorial_commands=\n\n{menu_white}COMANDOS.{reset}
+tutorial_commands_explanation=\nDurante cualquier partida tendrá acceso a comandos con distintas funciones.\nDesde rendirse, hasta conseguir el código FEN de la posición actual, podrá hacer una gran variedad\nde cosas con los comandos. Para poder ejecutar un comando es esencial usar la barra diagonal (/).\n\nA continuación le mostramos los comandos que hay:
